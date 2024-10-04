@@ -1,6 +1,6 @@
    "use client"
 import { useState, useEffect } from 'react'
-import { Bell, Book, Compass, Heart, MessageCircle, Moon, Sun } from 'lucide-react'
+import { Bell, Book, Compass, Heart, MessageCircle, Moon } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -47,15 +47,16 @@ const formatDate = (date: Date) => {
         <CardContent>
           <p className="text-lg font-semibold mb-2">Next Namaz: Maghrib in 1 hour 15 minutes</p>
           <Progress value={prayerProgress} className="w-full" />
-          <p className="text-sm mt-2">You've completed {prayerProgress}% of today's prayers</p>
+          <p className="text-sm mt-2">You&#39;ve completed {prayerProgress}% of today&#39;s prayers</p>
         </CardContent>
       </Card>
 
       <Tabs defaultValue="today" className="mb-6">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="today">Today's Prayers</TabsTrigger>
-          <TabsTrigger value="qaza">Qaza</TabsTrigger>
-          <TabsTrigger value="hadith">Today's Hadith</TabsTrigger>
+        <TabsTrigger value="today">Today&#39;s Prayers</TabsTrigger>
+        <TabsTrigger value="qaza">Qaza</TabsTrigger>
+        <TabsTrigger value="hadith">Today&#39;s Hadith</TabsTrigger>
+
         </TabsList>
         <TabsContent value="today">
           <Card>
@@ -91,7 +92,7 @@ const formatDate = (date: Date) => {
               <CardTitle>Hadith of the Day</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>"The best of you are those who are best to their families, and I am the best to my family."</p>
+              <p>The best of you are those who are best to their families, and I am the best to my family.</p>
               <p className="text-sm mt-2">- Sunan al-Tirmidhī 3895</p>
               <div className="flex gap-2 mt-4">
                 <Button variant="outline" size="icon">
@@ -157,7 +158,7 @@ const formatDate = (date: Date) => {
         <CardContent>
           <p className="text-sm">اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى</p>
           <p className="text-xs mt-2">
-            "O Allah, I ask You for guidance, piety, chastity and self-sufficiency"
+            O Allah, I ask You for guidance, piety, chastity and self-sufficiency
           </p>
         </CardContent>
       </Card>
