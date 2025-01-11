@@ -166,7 +166,6 @@ export default function Home({ session }: any) {
 
         <div className="fixed bottom-4 right-4">
           <Button size="icon" className="rounded-full bg-purple-600 text-white" onClick={() => logout()}>
-            <Bell className="h-4 w-4" />
             <LogOut className='h-4 w-4' />
           </Button>
         </div>
